@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button></ion-back-button>
+    <ion-title>formprod</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+      <form  [formGroup]="ionForm" (submit)="enviar()">
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input formControlName="nome"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Fabricante</ion-label>
+          <ion-input formControlName="fabric"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Valor</ion-label>
+          <ion-input formControlName="valor" class="valor" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Quantidade</ion-label>
+          <ion-input formControlName="quan" type="number" class="quan"></ion-input>
+        </ion-item>
+          <ion-button type="submit">Enviar</ion-button>
+      </form>
+
+
+
+</ion-content>
